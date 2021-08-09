@@ -1,0 +1,50 @@
+.card__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 1rem;
+}
+.card{
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    object-fit: cover;
+    background-color:lightblue;
+    border-radius: 2rem;
+    height: 150px;
+    transition: 1s;
+}
+.card:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.card__overlay{
+    background-color: rgba(0, 0, 0, .2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.card__overlay i{
+    font-size: 1.6rem;
+    color: white;
+    align-self: flex-end;
+    margin: 1rem;
+}
+.card__img{
+    width: 100%;
+}
+.card__name{
+    color: white;
+    font-weight: 700;
+    font-size: 1.4rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0 auto;
+    padding: 1rem;
+}
