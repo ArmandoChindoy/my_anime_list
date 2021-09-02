@@ -1,0 +1,2 @@
+.loader{display:flex;height:100vh;align-items:center;justify-content:center}@keyframes arrows{0%,to{color:#000;transform:translateY(0)}50%{color:#3ab493;transform:translateY(20px)}}.arrow{font-size:3rem;--delay:0s;animation:arrows 1s var(--delay) infinite ease-in}
+/*# sourceMappingURL=main.168ab5e1.chunk.css.map */
